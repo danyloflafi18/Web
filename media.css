@@ -1,0 +1,157 @@
+.menu [type="checkbox"],
+.menu label.toggleSubmenu {
+    display: none;
+}
+
+.menu label.toggleMenu {
+    display: none;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+}
+
+@media(max-width:1200px) {
+    body {
+        background: url(bg_index.jpg) fixed;
+        background-size: cover;
+    }
+    .menu li a:hover {
+        color: #d697f0;
+        box-shadow: 1px 5px 10px -5px #d697f0;
+        transition: all 0.5s ease;
+    }
+    .AGleft1 {
+        float: left;
+        margin: 0 0 3px 3px;
+        height: 145px;
+        width: 280px;
+    }
+    .hamburger {
+        height: 60px;
+        widows: 60px;
+    }
+    .menu ul {
+        display: none;
+    }
+    .menu label.toggleMenu {
+        display: block;
+    }
+    input.toggleMenu:checked~ul,
+    input.toggleSubmenu:checked~ul {
+        display: contents;
+        position: relative;
+    }
+    .menu label.toggleSubmenu {
+        position: absolute;
+        display: block;
+    }
+    .aboutAG1 {
+        margin-left: 14px;
+        text-align: center;
+        font-size: 23px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .aboutAG2 {
+        margin-left: 14px;
+        text-align: left;
+        font-size: 23px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+
+@media(max-width:992px) {
+    .AGleft1 {
+        float: left;
+        margin: 0 0 1.5px 1.5px;
+        height: 120px;
+        width: 235px;
+    }
+    .hamburger {
+        height: 50px;
+        widows: 50px;
+    }
+    .menu>ul li a {
+        display: block;
+        background: white;
+        padding: 10px;
+        font-size: 13px;
+        color: rgb(69, 45, 206);
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all 0.5s ease;
+    }
+    .albums>ul li a {
+        display: block;
+        background: white;
+        padding: 5px;
+        font-size: 12px;
+        color: rgb(69, 45, 206);
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all 0.5s ease;
+    }
+    .aboutAG1 {
+        margin-left: 13px;
+        text-align: center;
+        font-size: 21px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .aboutAG2 {
+        margin-left: 13px;
+        text-align: left;
+        font-size: 21px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+
+@media(max-width:768px) {
+    .AGleft1 {
+        float: left;
+        margin: 0;
+        height: 115px;
+        width: 210px;
+    }
+    .hamburger {
+        height: 40px;
+        widows: 40px;
+    }
+    .menu>ul li a {
+        display: block;
+        background: white;
+        padding: 10px;
+        font-size: 11px;
+        color: rgb(69, 45, 206);
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all 0.5s ease;
+    }
+    .albums>ul li a {
+        display: block;
+        background: white;
+        padding: 2px;
+        font-size: 10px;
+        color: rgb(69, 45, 206);
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all 0.5s ease;
+    }
+    .aboutAG1 {
+        margin-left: 13px;
+        text-align: center;
+        font-size: 19px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .aboutAG2 {
+        margin-left: 13px;
+        text-align: left;
+        font-size: 19px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .footer {
+        padding: 10px 20px;
+        color: #ca56fc;
+        background: #6e1e6a;
+        font-size: 13px;
+    }
+}
