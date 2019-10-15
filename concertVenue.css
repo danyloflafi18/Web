@@ -8,7 +8,7 @@ header {
 }
 
 body {
-    background: url(bg_index.jpg) fixed;
+    background: url(bg_concertVenue.jpg) fixed;
     background-size: cover;
 }
 
@@ -56,35 +56,6 @@ li {
     display: block;
 }
 
-#mainTitle {
-    text-align: center;
-    transform: rotate(-180deg);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-#aboutAG1 {
-    margin-left: 15px;
-    text-align: left;
-    font-size: 25px;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-#aboutAG2 {
-    margin-left: 15px;
-    text-align: left;
-    font-size: 25px;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.AGleft1 {
-    float: left;
-    margin: 0 0 5px 5px;
-}
-
-.tableOfDataAG {
-    border-spacing: 100px;
-}
-
 footer {
     padding: 10px 20px;
     color: #ca56fc;
@@ -113,4 +84,65 @@ footer {
         opacity: 1;
         transform: scale(1);
     }
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: #f38218;
+    padding: 0 0 25px 0;
+}
+
+h2 {
+    color: rgb(250, 182, 56);
+    text-align: center;
+}
+
+.contactDetails {
+    display: flex;
+    justify-content: center;
+    color: #f4f810;
+    text-align: center;
+    border: 2px solid white;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 370px;
+    height: 200px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.contentDetails {
+    display: block;
+}
+
+.mainContentDetails {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    color: red;
+    margin-top: 50px;
+    width: 300px;
+    margin-bottom: 30px;
+    height: 50px;
+    font-size: 15px;
+}
+
+.buyTickets {
+    display: flex;
+    justify-content: center;
+}
+
+iframe {
+    width: 100%;
+}
+
+footer {
+    padding: 10px 20px;
+    color: #ca56fc;
+    background: #6e1e6a;
 }
