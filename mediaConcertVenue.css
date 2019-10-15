@@ -1,0 +1,81 @@
+.menu [type="checkbox"],
+.menu label.toggleSubmenu {
+    display: none;
+}
+
+.menu label.toggleMenu {
+    display: none;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+}
+
+@media(max-width:1201px) {
+    .menu li:hover>ul {
+        display: none;
+    }
+}
+
+@media(max-width:1200px) {
+    body {
+        background: url(bg_concertVenue.jpg) fixed;
+        background-size: cover;
+    }
+    .menu li a:hover {
+        color: #d697f0;
+        box-shadow: 1px 5px 10px -5px #d697f0;
+        transition: all 0.5s ease;
+    }
+    .hamburger {
+        background: white;
+        height: 60px;
+        widows: 60px;
+    }
+    .menu ul {
+        display: none;
+    }
+    .menu label.toggleMenu {
+        display: block;
+    }
+    input.toggleMenu:checked~ul,
+    input.toggleSubmenu:checked~ul {
+        display: block;
+        position: relative;
+        margin: 10px;
+    }
+    .menu label.toggleSubmenu {
+        position: absolute;
+        top: 85px;
+        right: 0;
+        width: 1080px;
+        height: 43px;
+        display: block;
+    }
+    /* h2 {
+        margin-left: 70px;
+    } */
+}
+
+@media(max-width:992px) {
+    .hamburger {
+        height: 50px;
+        widows: 50px;
+    }
+}
+
+@media(max-width:768px) {
+    .hamburger {
+        height: 40px;
+        widows: 40px;
+    }
+    .footer {
+        padding: 10px 20px;
+        color: #ca56fc;
+        background: #6e1e6a;
+        font-size: 13px;
+    }
+    .btn {
+        padding-bottom: 5px;
+    }
+}

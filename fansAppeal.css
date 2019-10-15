@@ -1,0 +1,164 @@
+.menu[type="checkbox"] {
+    display: none;
+}
+
+header {
+    margin-top: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    background: url(bg_fansAppeal.jpg) fixed;
+    background-size: cover;
+}
+
+li {
+    list-style: none;
+}
+
+.menu>ul {
+    display: flex;
+    justify-content: center;
+    padding-inline-start: 0px;
+}
+
+.menu li a:hover {
+    color: #d697f0;
+    box-shadow: 1px 5px 10px -5px #d697f0;
+    transition: all 0.5s ease;
+}
+
+.menu>ul li a {
+    display: block;
+    background: white;
+    padding: 10px;
+    font-size: 18px;
+    color: rgb(170, 247, 17);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    border: 1px solid #eeb47e;
+}
+
+.menu li ul {
+    position: absolute;
+    display: none;
+    z-index: 1;
+    padding-inline-start: 0px;
+}
+
+.menu li>ul li a {
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.menu li:hover>ul {
+    display: block;
+}
+
+footer {
+    padding: 10px 20px;
+    color: #ca56fc;
+    background: #6e1e6a;
+    margin-top: 50px;
+}
+
+.logo {
+    animation: bounceIn 1.5s;
+    transition: all 1.3s cubic-bezier(0.1, -0.6, 0.965, 0.1);
+}
+
+.logo:hover {
+    transform: rotate(10deg) scale(1.1);
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 1;
+        transform: scale(2.5);
+    }
+    50% {
+        opacity: 0.05;
+        transform: scale(0.6);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.fansName1 {
+    width: 10%;
+}
+
+.fansName2 {
+    width: 10%;
+}
+
+.fansName1 th {
+    position: absolute;
+    background: rgb(145, 49, 235);
+    color: white;
+    margin-left: 150px;
+}
+
+.fansName2 th {
+    position: absolute;
+    background: rgb(145, 49, 235);
+    color: white;
+    margin-left: 150px;
+    margin-top: 300px;
+}
+
+td,
+th {
+    padding: 6px;
+    border: 1px dotted #ccc;
+    text-align: left;
+}
+
+.fansComment1 {
+    width: 10%;
+}
+
+.fansComment2 {
+    width: 10%;
+}
+
+.fansComment1 td {
+    position: absolute;
+    background: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: 70px;
+    right: 170px;
+    height: 150px;
+}
+
+.fansComment2 td {
+    position: absolute;
+    background: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: 400px;
+    right: 170px;
+    height: 150px;
+}
+
+.form-control {
+    position: absolute;
+    margin-top: 650px;
+    line-height: 100px;
+    max-width: 600px;
+    right: 90px;
+}
+
+.btn-info {
+    margin-top: 985px;
+    margin-left: 120px;
+    width: 170px;
+}

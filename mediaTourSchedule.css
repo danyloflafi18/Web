@@ -1,0 +1,231 @@
+.menu [type="checkbox"],
+.menu label.toggleSubmenu {
+    display: none;
+}
+
+.menu label.toggleMenu {
+    display: none;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+}
+
+@media(max-width: 1201px) {
+    .menu li:hover>ul {
+        display: none;
+    }
+}
+
+@media (max-width:1200px) {
+    body {
+        background: url(ep_naturalwhite.png) fixed;
+    }
+    .menu li a:hover {
+        color: #d697f0;
+        box-shadow: 1px 5px 10px -5px #d697f0;
+        transition: all 0.5s ease;
+    }
+    .contentAdmin {
+        padding: 20px;
+    }
+    .hamburger {
+        height: 60px;
+        widows: 60px;
+    }
+    .menu ul {
+        display: none;
+    }
+    .menu label.toggleMenu {
+        display: block;
+    }
+    input.toggleMenu:checked~ul,
+    input.toggleSubmenu:checked~ul {
+        display: block;
+        position: relative;
+        margin: 10px;
+    }
+    .menu label.toggleSubmenu {
+        position: absolute;
+        top: 85px;
+        right: 0;
+        width: 1110px;
+        height: 43px;
+        display: block;
+    }
+    .btn-info {
+        position: absolute;
+        top: 250px;
+        left: 350px;
+        border-radius: 5px;
+        background-image: linear-gradient(to top, rgb(207, 207, 207) 16%, rgb(252, 252, 252) 79%);
+        padding: 3px 20px;
+        border: 1px solid #000;
+        color: black;
+        text-decoration: none;
+        font-size: 15px;
+    }
+    .tableOfAddedPhoto {
+        position: absolute;
+        top: 250px;
+        left: 600px;
+        padding: 90px;
+        border: 1px solid black;
+        min-width: 180px;
+    }
+    .buttonSend {
+        position: absolute;
+        top: 600px;
+        left: 370px;
+        border-radius: 5px;
+        background-image: linear-gradient(to top, rgb(207, 207, 207) 16%, rgb(252, 252, 252) 79%);
+        padding: 2px 17px;
+        border: 1px solid #000;
+        color: black;
+        text-decoration: none;
+    }
+    .form-group1 {
+        position: absolute;
+        top: 600px;
+        left: 600px;
+        width: 180px;
+        padding: 4px;
+    }
+    .form-group2 {
+        position: absolute;
+        top: 700px;
+        left: 600px;
+    }
+}
+
+@media(max-width:992px) {
+    .hamburger {
+        height: 50px;
+        widows: 50px;
+    }
+    .menu>ul li a {
+        display: block;
+        background: white;
+        padding: 10px;
+        font-size: 13px;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all 0.5s ease;
+    }
+    .menu label.toggleSubmenu {
+        position: absolute;
+        top: 73px;
+        right: 0;
+        width: 1020px;
+        height: 35px;
+        display: block;
+    }
+    .btn-info {
+        position: absolute;
+        top: 220px;
+        left: 330px;
+        border-radius: 5px;
+        background-image: linear-gradient(to top, rgb(207, 207, 207) 16%, rgb(252, 252, 252) 79%);
+        padding: 3px 20px;
+        border: 1px solid #000;
+        color: black;
+        text-decoration: none;
+        font-size: 15px;
+    }
+    .tableOfAddedPhoto {
+        position: absolute;
+        top: 250px;
+        left: 400px;
+        padding: 80px;
+        border: 1px solid black;
+        min-width: 170px;
+    }
+    .buttonSend {
+        position: absolute;
+        top: 500px;
+        left: 330px;
+        border-radius: 5px;
+        background-image: linear-gradient(to top, rgb(207, 207, 207) 16%, rgb(252, 252, 252) 79%);
+        padding: 2px 15px;
+        border: 1px solid #000;
+        color: black;
+        text-decoration: none;
+    }
+    .form-group1 {
+        position: absolute;
+        top: 540px;
+        left: 400px;
+        width: 160px;
+        padding: 3px;
+    }
+    .form-group2 {
+        position: absolute;
+        top: 600px;
+        left: 400px;
+    }
+}
+
+@media(max-width:768px) {
+    .hamburger {
+        height: 40px;
+        widows: 40px;
+    }
+    .menu>ul li a {
+        display: block;
+        background: white;
+        padding: 10px;
+        font-size: 11px;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all 0.5s ease;
+    }
+    .footer {
+        padding: 10px 20px;
+        color: #ca56fc;
+        background: #6e1e6a;
+        font-size: 13px;
+    }
+    .btn-info {
+        position: absolute;
+        top: 290px;
+        left: 250px;
+        border-radius: 5px;
+        background-image: linear-gradient(to top, rgb(207, 207, 207) 16%, rgb(252, 252, 252) 79%);
+        padding: 3px 20px;
+        border: 1px solid #000;
+        color: black;
+        text-decoration: none;
+        font-size: 15px;
+    }
+    .tableOfAddedPhoto {
+        position: absolute;
+        top: 320px;
+        left: 100px;
+        padding: 80px;
+        border: 1px solid black;
+        min-width: 170px;
+    }
+    .buttonSend {
+        position: absolute;
+        top: 920px;
+        left: 100px;
+        border-radius: 5px;
+        background-image: linear-gradient(to top, rgb(207, 207, 207) 16%, rgb(252, 252, 252) 79%);
+        padding: 2px 15px;
+        border: 1px solid #000;
+        color: black;
+        text-decoration: none;
+    }
+    .form-group1 {
+        position: absolute;
+        top: 610px;
+        left: 100px;
+        width: 160px;
+        padding: 3px;
+    }
+    .form-group2 {
+        position: absolute;
+        top: 670px;
+        left: 100px;
+    }
+}

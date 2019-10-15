@@ -1,0 +1,128 @@
+.menu [type="checkbox"],
+.menu label.toggleSubmenu {
+    display: none;
+}
+
+.menu label.toggleMenu {
+    display: none;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+}
+
+@media(max-width:1201px) {
+    .menu li:hover>ul {
+        display: none;
+    }
+}
+
+@media(max-width:1200px) {
+    body {
+        background: url(bg_news.PNG) fixed;
+        background-size: cover;
+    }
+    .menu li a:hover {
+        color: #d697f0;
+        box-shadow: 1px 5px 10px -5px #d697f0;
+        transition: all 0.5s ease;
+    }
+    .AGleft1 {
+        float: left;
+        margin: 0 0 3px 3px;
+        height: 145px;
+        width: 280px;
+    }
+    .hamburger {
+        height: 60px;
+        widows: 60px;
+    }
+    .menu ul {
+        display: none;
+    }
+    .menu label.toggleMenu {
+        display: block;
+    }
+    input.toggleMenu:checked~ul,
+    input.toggleSubmenu:checked~ul {
+        display: block;
+        position: relative;
+        margin: 10px;
+    }
+    .menu label.toggleSubmenu {
+        position: absolute;
+        top: 85px;
+        right: 0;
+        width: 1080px;
+        height: 43px;
+        display: block;
+    }
+    .aboutAG1 {
+        margin-left: 14px;
+        text-align: center;
+        font-size: 23px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .aboutAG2 {
+        margin-left: 14px;
+        text-align: left;
+        font-size: 23px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+
+@media(max-width:992px) {
+    .AGleft1 {
+        float: left;
+        margin: 0 0 1.5px 1.5px;
+        height: 120px;
+        width: 235px;
+    }
+    .hamburger {
+        height: 50px;
+        widows: 50px;
+    }
+    .aboutAG1 {
+        margin-left: 13px;
+        text-align: center;
+        font-size: 21px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .aboutAG2 {
+        margin-left: 13px;
+        text-align: left;
+        font-size: 21px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+
+@media(max-width:768px) {
+    .AGleft1 {
+        float: left;
+        margin: 0;
+        height: 115px;
+        width: 210px;
+    }
+    .hamburger {
+        height: 40px;
+        widows: 40px;
+    }
+    .aboutAG1 {
+        margin-left: 13px;
+        text-align: center;
+        font-size: 19px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .aboutAG2 {
+        margin-left: 13px;
+        text-align: left;
+        font-size: 19px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .footer {
+        padding: 10px 20px;
+        color: #ca56fc;
+        background: #6e1e6a;
+        font-size: 13px;
+    }
+}
