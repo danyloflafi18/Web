@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html manifest="cache.manifest">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin</title>
+    <link rel="stylesheet" href="Styles_and_BG\admin.css" type="text/css">
+    <link rel="stylesheet" href="Styles_and_BG\mediaAdmin.css" type="text/css">
+    <link rel="stylesheet" href="" type="text/css">
+
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="">
+                <img src="Photo\LOGO.PNG">
+            </a>
+        </div>
+        <div>
+            <nav class="menu">
+                <input type="checkbox" name="toggle" id="menu" class="toggleMenu">
+                <label for="menu" class="toggleMenu"><img class="hamburger" src="Photo\Hamburger_icon.svg.png"  alt="Deleted"></label>
+                <ul>
+                    <li><a href="index.html">Main</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li>
+
+                        <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m1">
+                        <a href="#">For fans</a>
+                        <label for="sub_m1" class="toggleSubmenu"></label>
+                        <ul>
+                            <li class="dropDown">
+                                <a href="">Fan club</a>
+                                <a href="tour_schedule.html">Tour schedule</a>
+                                <a href="">Lyrics</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="fans_appeal.html">Fans appeal</a></li>
+                    <li><a href="concert_venue.html">Concert venue</a></li>
+                    <li><a href="admin.html">Admin</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <hr>
+    <content>
+
+        <div>
+            <table class="tableOfAddedPhoto">
+                <tr>
+                    <th>
+                        here will be your photos
+                    </th>
+                </tr>
+            </table>
+        </div>
+        <div><button class="btn btn-info1" role="button">Add Image</button></div>
+        <div>
+            <button id="send" class="btn btn-info2" role="button" onclick="new_news()">Send</button>
+        </div>
+        <div class="form-group1">
+            <label for="newsTitle"></label>
+            <input id="newsTitle" type="text" class="form-control1" placeholder="News title">
+
+        </div>
+        <div class="form-group2">
+            <label for="newsBody"></label>
+            <textarea id="newsBody" class="form-control2" cols="40" rows="15" placeholder="News body"></textarea>
+        </div>
+    </content>
+
+    <footer>
+        <p>Created by Danylo Chalyi. All rights reserved.</p>
+    </footer>
+
+</body>
+<script src="Scripts\admin.js"></script>
+
+</html>
