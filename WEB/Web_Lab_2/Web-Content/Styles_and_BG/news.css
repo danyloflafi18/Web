@@ -1,0 +1,110 @@
+.menu[type="checkbox"] {
+    display: none;
+}
+
+header {
+    margin-top: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    background: url(bg_news.PNG) fixed;
+    background-size: cover;
+}
+
+li {
+    list-style: none;
+}
+
+.menu>ul {
+    display: flex;
+    justify-content: center;
+    padding-inline-start: 0px;
+}
+
+.menu li a:hover {
+    color: #d697f0;
+    box-shadow: 1px 5px 10px -5px #d697f0;
+    transition: all 0.5s ease;
+}
+
+.menu>ul li a {
+    display: block;
+    background: white;
+    padding: 10px;
+    font-size: 18px;
+    color: rgb(69, 45, 206);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    border: 1px solid #eeb47e;
+}
+
+.menu li ul {
+    position: absolute;
+    display: none;
+    z-index: 1;
+    padding-inline-start: 0px;
+}
+
+.menu li>ul li a {
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.menu li:hover>ul {
+    display: block;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.news_item {
+    width: 200px;
+    height: 500px;
+    color: #FFF;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.photo {
+    width: 100%;
+    height: auto;
+}
+
+.news_title {
+    text-align: center;
+}
+
+footer {
+    padding: 10px 20px;
+    color: #ca56fc;
+    background: #6e1e6a;
+}
+
+.logo {
+    animation: bounceIn 1.5s;
+    transition: all 1.3s cubic-bezier(0.1, -0.6, 0.965, 0.1);
+}
+
+.logo:hover {
+    transform: rotate(10deg) scale(1.1);
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 1;
+        transform: scale(2.5);
+    }
+    50% {
+        opacity: 0.05;
+        transform: scale(0.6);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
