@@ -1,0 +1,148 @@
+.menu[type="checkbox"] {
+    display: none;
+}
+
+header {
+    margin-top: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    background: url(bg_concertVenue.jpg) fixed;
+    background-size: cover;
+}
+
+li {
+    list-style: none;
+}
+
+.menu>ul {
+    display: flex;
+    justify-content: center;
+    padding-inline-start: 0px;
+}
+
+.menu li a:hover {
+    color: #d697f0;
+    box-shadow: 1px 5px 10px -5px #d697f0;
+    transition: all 0.5s ease;
+}
+
+.menu>ul li a {
+    display: block;
+    background: white;
+    padding: 10px;
+    font-size: 18px;
+    color: rgb(69, 45, 206);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    border: 1px solid #eeb47e;
+}
+
+.menu li ul {
+    position: absolute;
+    display: none;
+    z-index: 1;
+    padding-inline-start: 0px;
+}
+
+.menu li>ul li a {
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.menu li:hover>ul {
+    display: block;
+}
+
+footer {
+    padding: 10px 20px;
+    color: #ca56fc;
+    background: #6e1e6a;
+}
+
+.logo {
+    animation: bounceIn 1.5s;
+    transition: all 1.3s cubic-bezier(0.1, -0.6, 0.965, 0.1);
+}
+
+.logo:hover {
+    transform: rotate(10deg) scale(1.1);
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 1;
+        transform: scale(2.5);
+    }
+    50% {
+        opacity: 0.05;
+        transform: scale(0.6);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: #f38218;
+    padding: 0 0 25px 0;
+}
+
+h2 {
+    color: rgb(250, 182, 56);
+    text-align: center;
+}
+
+.contactDetails {
+    display: flex;
+    justify-content: center;
+    color: #f4f810;
+    text-align: center;
+    border: 2px solid white;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 370px;
+    height: 200px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.contentDetails {
+    display: block;
+}
+
+.mainContentDetails {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    color: red;
+    margin-top: 50px;
+    width: 300px;
+    margin-bottom: 30px;
+    height: 50px;
+    font-size: 15px;
+}
+
+.buyTickets {
+    display: flex;
+    justify-content: center;
+}
+
+iframe {
+    width: 100%;
+}
+
+footer {
+    padding: 10px 20px;
+    color: #ca56fc;
+    background: #6e1e6a;
+}

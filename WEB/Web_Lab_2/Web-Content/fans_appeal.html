@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html manifest="cache.manifest">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fans Appeal</title>
+    <link rel="stylesheet" href="Styles_and_BG\fansAppeal.css" type="text/css">
+    <link rel="stylesheet" href="Styles_and_BG\mediaFansAppeal.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+
+</head>
+
+<body id="body">
+    <header>
+        <div class="logo">
+            <a href="">
+                <img src="Photo\LOGO.PNG">
+            </a>
+        </div>
+        <div>
+            <nav class="menu">
+                <input type="checkbox" name="toggle" id="menu" class="toggleMenu">
+                <label for="menu" class="toggleMenu"><img class="hamburger" src="Photo\Hamburger_icon.svg.png"  alt="Deleted"></label>
+                <ul>
+                    <li><a href="index.html">Main</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li>
+
+                        <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m1">
+                        <a href="#">For fans</a>
+                        <label for="sub_m1" class="toggleSubmenu"></label>
+                        <ul>
+                            <li class="dropDown">
+                                <a href="">Fan club</a>
+                                <a href="tour_schedule.html">Tour schedule</a>
+                                <a href="">Lyrics</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="fans_appeal.html">Fans appeal</a></li>
+                    <li><a href="concert_venue.html">Concert venue</a></li>
+                    <li><a href="admin.html">Admin</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <hr>
+    <main id="main">
+        <div id="appeals">
+            <div class="container">
+                <hr>
+                <div class="row">
+                    <div class="fan_time card col-2">
+                        <p class="card-text">Supporter Ariana Grande</p>
+                        <p class="card-text">20:20</p>
+                        <p class="card-text">09.09.19</p>
+                    </div>
+                    <div class="card col-8">
+                        <p class="card-text">I know Ariana said this to<br> be cool and didn’t mean<br> no harm but I don’t like<br> even slightest level of<br> slight commentary from someone<br> I know loves and respects me
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <hr>
+                <div class="row">
+                    <div class="fan_time card col-2">
+                        <p class="card-text">Supporter Ariana Grande</p>
+                        <p class="card-text">18:30</p>
+                        <p class="card-text">12.10.19</p>
+                    </div>
+                    <div class="card col-8">
+                        <p class="card-text">
+                            I know Ariana said this to<br> be cool and didn’t mean<br> no harm but I don’t like<br> even slightest level of<br> slight commentary from someone<br> I know loves and respects me
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="commentForm">
+        <div class="col-8 form">
+            <form class="form-row">
+                <label>
+                <textarea id="textFansAppeal" placeholder="Write an appeal..."></textarea>
+            </label>
+            </form>
+        </div>
+        <button id="sendButton" class="btn send btn-info">Send</button>
+    </div>
+    </content>
+
+    <footer>
+        <p class="footer">Created by Danylo Chalyi. All rights reserved.</p>
+    </footer>
+
+    <script src="Scripts\storage.js"></script>
+    <script src="Scripts\fans_appeal.js"></script>
+</body>
+
+</html>

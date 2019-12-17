@@ -1,0 +1,157 @@
+header {
+    margin-top: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    background: url(ep_naturalwhite.png) fixed;
+}
+
+li {
+    list-style: none;
+}
+
+.menu[type="checkbox"] {
+    display: none;
+}
+
+.menu>ul {
+    display: flex;
+    justify-content: center;
+    padding-inline-start: 0px;
+}
+
+.menu li a:hover {
+    color: #d697f0;
+    box-shadow: 1px 5px 10px -5px #d697f0;
+    transition: all 0.5s ease;
+}
+
+.menu>ul li a {
+    display: block;
+    background: white;
+    padding: 10px;
+    font-size: 18px;
+    color: rgb(69, 45, 206);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    border: 1px solid black;
+}
+
+.menu li ul {
+    position: absolute;
+    display: none;
+    z-index: 1;
+    padding-inline-start: 0px;
+}
+
+.menu li>ul li a {
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.menu li:hover>ul {
+    display: block;
+}
+
+.btn-info {
+    position: absolute;
+    top: 300px;
+    left: 400px;
+    border-radius: 5px;
+    background-image: linear-gradient(to top, rgb(207, 207, 207) 16%, rgb(252, 252, 252) 79%);
+    padding: 3px 20px;
+    border: 1px solid #000;
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.tableOfAddedPhoto {
+    position: absolute;
+    top: 300px;
+    left: 750px;
+    padding: 110px;
+    border: 1px solid black;
+    min-width: 200px;
+}
+
+.buttonSend {
+    position: absolute;
+    top: 700px;
+    left: 450px;
+    border-radius: 5px;
+    background-image: linear-gradient(to top, rgb(207, 207, 207) 16%, rgb(252, 252, 252) 79%);
+    padding: 3px 20px;
+    border: 1px solid #000;
+    color: black;
+    text-decoration: none;
+}
+
+.form-group1 {
+    position: absolute;
+    top: 700px;
+    left: 750px;
+    width: 200px;
+    padding: 5px;
+}
+
+.form-group2 {
+    position: absolute;
+    top: 800px;
+    left: 750px;
+}
+
+footer {
+    margin-top: 250px;
+    padding: 10px 20px;
+    color: #ca56fc;
+    background: #6e1e6a;
+}
+
+.logo {
+    animation: bounceIn 1.5s;
+    transition: all 1.3s cubic-bezier(0.1, -0.6, 0.965, 0.1);
+}
+
+.logo:hover {
+    transform: rotate(10deg) scale(1.1);
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 1;
+        transform: scale(2.5);
+    }
+    50% {
+        opacity: 0.05;
+        transform: scale(0.6);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+.tableTourSchedule {
+    border: 1px solid black;
+    text-align: center;
+    width: 900px;
+}
+
+td {
+    color: #3b0ba2;
+    border: 1px dotted black;
+}
+
+.title td {
+    color: #ca56fc;
+    border: 1px dotted brown;
+}

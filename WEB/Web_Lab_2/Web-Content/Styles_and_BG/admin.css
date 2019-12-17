@@ -1,0 +1,157 @@
+header {
+    margin-top: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    background: url(ep_naturalwhite.png) fixed;
+}
+
+li {
+    list-style: none;
+}
+
+.menu[type="checkbox"] {
+    display: none;
+}
+
+.menu>ul {
+    display: flex;
+    justify-content: center;
+    padding-inline-start: 0px;
+}
+
+.menu li a:hover {
+    color: #d697f0;
+    box-shadow: 1px 5px 10px -5px #d697f0;
+    transition: all 0.5s ease;
+}
+
+.menu>ul li a {
+    display: block;
+    background: white;
+    padding: 10px;
+    font-size: 18px;
+    color: rgb(69, 45, 206);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    border: 1px solid black;
+}
+
+.menu li ul {
+    position: absolute;
+    display: none;
+    z-index: 1;
+    padding-inline-start: 0px;
+}
+
+.menu li>ul li a {
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.menu li:hover>ul {
+    display: block;
+}
+
+.addImg {
+    position: absolute;
+    margin-top: 90px;
+    left: 350px;
+    border-radius: 5px;
+    background-image: linear-gradient(to top, rgb(207, 207, 207) 16%, rgb(252, 252, 252) 79%);
+    padding: 3px 20px;
+    border: 1px solid #000;
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.tableOfAddedPhoto {
+    width: 10%;
+}
+
+.tableOfAddedPhoto th {
+    position: absolute;
+    border: 1px solid black;
+    color: black;
+    right: 100px;
+    margin-top: 120px;
+    margin-right: 50px;
+    margin-left: 30px;
+}
+
+th {
+    padding: 120px;
+    border: 1px dotted #ccc;
+    text-align: left;
+}
+
+.btn-info2 {
+    position: absolute;
+    margin-top: 490px;
+    left: 350px;
+    border-radius: 5px;
+    background-image: linear-gradient(to top, rgb(207, 207, 207) 16%, rgb(252, 252, 252) 79%);
+    padding: 3px 20px;
+    border: 1px solid #000;
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.form-group2 {
+    position: absolute;
+    margin-top: 600px;
+    left: 750px;
+}
+
+input#newsTitle.form-control1 {
+    position: absolute;
+    right: 100px;
+    margin-top: 500px;
+    margin-right: 250px;
+    width: 200px;
+    padding: 6px;
+}
+
+textarea.form-control2 {
+    position: absolute;
+    right: 100px;
+    left: 240px;
+    margin-right: 250px;
+    width: 200px;
+    padding: 6px;
+}
+
+footer {
+    margin-top: 950px;
+    padding: 10px 20px;
+    color: #ca56fc;
+    background: #6e1e6a;
+}
+
+.logo {
+    animation: bounceIn 1.5s;
+    transition: all 1.3s cubic-bezier(0.1, -0.6, 0.965, 0.1);
+}
+
+.logo:hover {
+    transform: rotate(10deg) scale(1.1);
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 1;
+        transform: scale(2.5);
+    }
+    50% {
+        opacity: 0.05;
+        transform: scale(0.6);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

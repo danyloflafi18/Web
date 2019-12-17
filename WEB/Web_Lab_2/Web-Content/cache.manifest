@@ -1,0 +1,21 @@
+CACHE MANIFEST
+
+CACHE:
+index.html
+Styles_and_BG/bg_concertVenue.jpg
+Styles_and_BG/bg_fansAppeal.jpg
+Styles_and_BG/bg_index.jpg
+Styles_and_BG/bg_news.PNG
+Styles_and_BG/ep_naturalwhite.png
+https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css
+Styles_and_BG/fansAppeal.css
+Styles_and_BG/index.css
+Styles_and_BG/news.css
+Styles_and_BG/tourSchedule.css
+Styles_and_BG/concertVenue.css
+
+NETWORK:
+*
+
+FALLBACK:
+admin.html error.html
